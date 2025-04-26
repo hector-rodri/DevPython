@@ -10,3 +10,6 @@ elif num2 > num1:
     print("El segundo número es mayor")
 else:
     print("Los números son iguales")
+
+if num1 == 0 or num2 == 0:
+    print("Uno de los números es igual a 0")
