@@ -1,0 +1,6 @@
+print("Hola me llamo Hector")
+print("Me gustan las naranjas")
+print("Te he hecho un dibujo...")
+print(" /\_/\ ")
+print("( o.o )")
+print(" > ^ <")
