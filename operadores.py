@@ -13,3 +13,6 @@ else:
 
 if num1 == 0 or num2 == 0:
     print("Uno de los números es igual a 0")
+
+if num1 < 0 or num2 < 0:
+    print("Uno de los números es negativo")
