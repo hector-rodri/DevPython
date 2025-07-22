@@ -2,7 +2,7 @@ EXPECTED_BAKE_TIME = 30
 PREPARATION_TIME = 2
 
 def bake_time_remaining(elapsed_bake_time):
-    return elapsed_bake_time - EXPECTED_BAKE_TIME
+    return EXPECTED_BAKE_TIME - elapsed_bake_time
 
 def preparation_time_in_minutes(layers):
     return layers * PREPARATION_TIME
