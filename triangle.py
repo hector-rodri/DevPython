@@ -8,10 +8,17 @@ def is_triangle(side1,side2,side3):
         phase2 = True
     else: print('The sum of the lengths of any two sides must be greater than or equal to the length of the remaining side')
     if phase1 == True and phase2 == True:
-        print('Your shape it is a triangle')
         return True
     else: print('ERROR, your shape it is not a triangle')
+    return False
 
+def type_triangle(side1,side2,side3):
+    if side1 == side2 == side3:
+        return 'Equilateral'
+    elif side1 == side2 or side1 == side3 or side2 == side3:
+        return 'Isosceles'
+    else: return 'Scaleno'
+        
 while True:
     print('I am going to know if your shape it is a triangle equilateral, isosceles, or scalene')
     print('-Equilateral it is if the triangle have the sides of the same lenght')
@@ -22,4 +29,3 @@ while True:
     side1 = input('Side 1: ')
     side2 = input('Side 2: ')
     side3 = input('Side 3: ')
-
