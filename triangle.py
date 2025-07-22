@@ -29,3 +29,13 @@ while True:
     side1 = input('Side 1: ')
     side2 = input('Side 2: ')
     side3 = input('Side 3: ')
+
+    if is_triangle(int(side1),int(side2),int(side3)) == False:
+        continue
+    type = type_triangle(side1,side2,side3)
+    print('Your shape is a triangle '+type)
+    print('Thanks for use my program')
+    print('If you want to stop the program, you must write stop')
+    seguir = input()
+    if seguir.lower() == 'stop':
+        break
