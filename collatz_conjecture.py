@@ -7,7 +7,7 @@ print("The rules were deceptively simple. Pick any positive integer.\n")
 
 print("If it's even, divide it by 2.")
 print("If it's odd, multiply it by 3 and add 1.")
-print("Then, repeat these steps with the result, continuing indefinitely.")
+print("Then, repeat these steps with the result, continuing indefinitely.\n")
 
 number = int(input('Write a number:'))
 
@@ -20,5 +20,5 @@ while True:
         print(number)
 
     if number == 1:
-        print('FIN')
+        print('END')
         break
