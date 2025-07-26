@@ -8,3 +8,6 @@ while True:
         number = (number * 3) + 1
         print(number)
 
+    if number == 1:
+        print('FIN')
+        break
