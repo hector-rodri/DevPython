@@ -1,2 +1,2 @@
-# First-Python-Projects
-Mis primeras prácticas en python donde avanzo con el aprendizaje del lenguaje
+# DevPython
+My first steps in Python where we advance with learning the language
