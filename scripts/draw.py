@@ -7,6 +7,7 @@ pygame.display.set_caption("Pintar con el ratón")
 screen.fill((255, 255, 255))
 
 draw = False 
+delete = False
 radius = 5
 
 while True:
@@ -16,14 +17,23 @@ while True:
             sys.exit()
 
         if event.type == pygame.MOUSEBUTTONDOWN:
-            draw = True
+            if event.button == 1: 
+                draw = True
+            elif event.button == 3:  
+                delete = True
 
         if event.type == pygame.MOUSEBUTTONUP:
-            draw = False
+            if event.button == 1:
+                draw = False
+            elif event.button == 3:
+                delete = False
 
         if event.type == pygame.MOUSEMOTION:
             if draw:
                 x, y = event.pos
                 pygame.draw.circle(screen, (0, 0, 0), (x, y), radius)
+            if delete:
+                x, y = event.pos
+                pygame.draw.circle(screen, (255, 255, 255), (x, y), radius)
 
     pygame.display.flip()
