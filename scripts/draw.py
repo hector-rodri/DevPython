@@ -19,6 +19,10 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1: 
                 draw = True
+            elif event.button == 4:  
+                radius += 1
+            elif event.button == 5:
+                radius = max(1, radius - 1)
             elif event.button == 3:  
                 delete = True
 
